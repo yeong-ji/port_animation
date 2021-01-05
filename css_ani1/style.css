@@ -150,7 +150,6 @@ body {
 /* 쉐도우 */
 .ghost .shadow {
     position: absolute;
-    border: 1px solid red;
     width: 16.5vmin;
     height: 2vmin;
     background: #000031;
