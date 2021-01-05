@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #00034b;
+}
+
+.ghost {
+    width: 16.5vmin;
+    height: 25.5vmin;
+    position: relative;
+}
+
+.ghost .body {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 80px 80px 16px 16px;
+    animation: ghost 2s linear infinite;
+}
+
+.ghost .body .bottom {
+    position: absolute;
+    width: 100%;
+    top: 92%;
+}
+
+.ghost .body .bottom .leg {
+    position: absolute;
+    background-color: #fff;
+    width: 18%;
+    height: 3vmin;
+    border-radius: 0 0 50% 50%;
+    z-index: 2;
+}
+
+.ghost .body .bottom .leg:nth-child(1) {
+    left: 0;
+}
+
+.ghost .body .bottom .leg:nth-child(2) {
+    left: 27%;
+}
+.ghost .body .bottom .leg:nth-child(3) {
+    left: 54%;
+}
+.ghost .body .bottom .leg:nth-child(4) {
+    left: 82%;
+}
+
+.ghost .body .bottom .wave {
+    position: relative;
+    background: #c3c7cb;
+    width: 17%;
+    height: 3vmin;
+    border-radius:50%;
+    left: 13.5%;
+    box-shadow: inset 0 2vmin 0 #fff;
+}
+.ghost .body .bottom .wave::before, .ghost .body .bottom .wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #c3c7cb;
+    width: 100%;
+    height: 3vmin;
+    border-radius:50%;
+    left: 4.45vmin;
+    box-shadow: inset 0 2vmin 0 #fff;
+}
+.ghost .body .bottom .wave::after{
+    left: 9vmin;
+}
+
+.ghost .body .line {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 2vmin;
+    top: 90%;
+    background-color: #fff;
+}
+
+.ghost .body .face {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+
+/* 눈 */
+.ghost .body .face .eyes {
+    width: 1.8vmin;
+    height: 2.8vmin;
+    background: #000449;
+    border-radius: 50%;
+    margin-left: 4.8vmin;
+    animation: eyes 2s linear infinite;
+}
+.ghost .body .face .eyes::after {
+    content: "";
+    display: block;
+    width: 1.8vmin;
+    height: 2.8vmin;
+    margin-left: 5vmin;
+    background: #000449;
+    border-radius: 50%;
+}
+/* 볼터치 */
+.ghost .body .face .blush {
+    width: 2.3vmin;
+    height: 2.3vmin;
+    background: #ffbeff;
+    border-radius: 50%;
+    margin-top: 1vmin;
+    margin-left: 2.8vmin;
+}
+
+.ghost .body .face .blush::after {
+    content: "";
+    display: block;
+    width: 2.3vmin;
+    height: 2.3vmin;
+    margin-left: 8.4vmin;
+    background: #ffbeff;
+    border-radius: 50%;
+}
+
+/* 글로우 */
+.ghost .glow {
+    position: absolute;
+    width: 17.5vmin;
+    height: 26.5vmin;
+    background: #fff;
+    opacity: .5;
+    filter: blur(3vmin);
+    border-radius: 80px 80px 16px 16px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    animation: ghost 2s linear infinite, glow 2s linear infinite;
+}
+/* 쉐도우 */
+.ghost .shadow {
+    position: absolute;
+    border: 1px solid red;
+    width: 16.5vmin;
+    height: 2vmin;
+    background: #000031;
+    top:120%;
+    filter:blur(.5vmin);
+    border-radius: 50%;
+    animation: shadow 2s linear infinite;
+}
+
+
+/* 애니메이션 */
+
+@keyframes ghost {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-1vmin);}
+    100% {transform: translateY(0);}
+}
+@keyframes glow {
+    0%{opacity: .5; filter: blur(3vmin);}
+    25%{opacity: 0.3; filter: blur(2vmin);}
+    50%{opacity: .5; filter: blur(3vmin);}
+    75%{opacity: 0.3; filter: blur(2vmin);}
+    100%{opacity: .5; filter: blur(3vmin);}
+}
+@keyframes shadow {
+    0% {transform: scale(1);}
+    50% {transform: scale(0.7, 1);}
+    100% {transform: scale(1);}
+}
+@keyframes eyes {
+    0% {transform: scale(1);}
+    30% {transform: scale(1);}
+    35% {transform: scale(1, 0);}
+    37% {transform: scale(1, 0);}
+    40% {transform: scale(1);}
+    100% {transform: scale(1);}
+}
