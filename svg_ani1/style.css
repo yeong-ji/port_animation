@@ -46,7 +46,7 @@ body {
 @keyframes heart {
     0% {
         opacity: 0;
-        transform: translate(0, 0) rotate(10deg);
+        transform: translate(0, 30vh) rotate(10deg);
     }
     50% {opacity: 1;}
     65% {opacity: 1;}
