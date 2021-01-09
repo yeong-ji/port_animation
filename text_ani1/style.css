@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #7d034a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Righteous;
+    height: 100vh;
+}
+
+.rainbow {
+    list-style: none;
+    position: relative;
+    display: block;
+}
+.rainbow_layer {
+    font-size: 4.5rem;
+    text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 4px 4px 0 rgba(0,0,0,0.2);
+    animation: rainbow 1.5s ease-in-out infinite;
+}
+.rainbow_layer:nth-child(1){
+    color: #fff;
+    z-index: -10;
+    left: 1px;
+    animation-delay: calc( 1 / 10 * 1s);
+}
+.rainbow_layer:nth-child(2){
+    color: rgb(241, 10, 10);
+    z-index: -20;
+    left: 2px;
+    animation-delay: calc( 2 / 10 * 1s);
+}
+.rainbow_layer:nth-child(3){
+    color: rgb(240, 160, 11);
+    z-index: -30;
+    left: 3px;
+    animation-delay: calc( 3 / 10 * 1s);
+}
+.rainbow_layer:nth-child(4){
+    color: rgb(238, 238, 11);
+    z-index: -40;
+    left: 4px;
+    animation-delay: calc( 4 / 10 * 1s);
+}
+.rainbow_layer:nth-child(5){
+    color: rgb(7, 121, 7);
+    z-index: -50;
+    left: 5px;
+    animation-delay: calc( 5 / 10 * 1s);
+}
+.rainbow_layer:nth-child(6){
+    color: rgb(15, 15, 224);
+    z-index: -60;
+    left: 6px;
+    animation-delay: calc( 6 / 10 * 1s);
+}
+.rainbow_layer:nth-child(7){
+    color: rgb(212, 17, 212);
+    z-index: -70;
+    left: 7px;
+    animation-delay: calc( 7 / 10 * 1s);
+}
+.rainbow_layer:not(:first-child) {
+    position: absolute;
+    top: 0;
+}
+
+@keyframes rainbow {
+    0%, 100% {
+        transform: translateY(1.5rem);
+    }
+    50% {
+        transform: translateY(-1.5rem);
+    }
+}
