@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255,114,96);
+    background: linear-gradient(45deg, rgb(255,114,96) 0%, rgb(252,210,113) 50%, rgb(102,176,102) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap {
+    perspective: 1200px;
+    -webkit-perspective: 1200px;
+}
+
+.cube {
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    transform-style: preserve-3d;
+    animation : spin 5s infinite linear;
+}
+.cube>div {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+}
+.one {
+    transform: rotateX(90deg) translateZ(10vw); 
+    background-color: #E3493B;
+}
+.two {
+    transform: translateZ(10vw); 
+    background-color: #23B5AF;
+}
+.three {
+    transform: rotateY(90deg) translateZ(10vw);
+    background-color: #E8487F;
+}
+.four {
+    transform: rotateY(180deg) translateZ(10vw);
+    background-color: #28B78D;
+}
+.five {
+    transform: rotateY(-90deg) translateZ(10vw);
+    background-color: #FF5B00;
+}
+.six {
+    transform: rotateX(-90deg) translateZ(10vw);
+    background-color: #FEEB51;
+}
+
+@keyframes spin {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotateX(360deg) rotateY(-360deg);}
+}
