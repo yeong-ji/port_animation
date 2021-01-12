@@ -8,7 +8,6 @@ span[0].style.display = 'block';
 //     span.style.display = 'block';
 // })
 
-
 //let candidate = Array(45);   //[]보통은 대괄호 너무 많을땐 Array라는 함수를 이용 empty는 완전히 빈값
 //mapping 맵
 let candidate = Array(45)
@@ -42,14 +41,6 @@ let result = document.getElementById('result');
 ballColor = (num, result) => {
     let ball = document.createElement('div');
         ball.textContent = num;
-        // ball.style.display = 'inline-block';
-        // ball.style.border = '1px solid black';
-        // ball.style.borderRadius = '50%';
-        // ball.style.width = '20px';
-        // ball.style.height = '20px';
-        // ball.style.textAlign = 'center';
-        // ball.style.marginRight = '10px';
-        // ball.style.fontSize = '12px';
         let backColor;
         if(num <= 10){
             backColor = 'red';
