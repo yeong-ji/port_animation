@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지뢰찾기</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #f9f4ec;
+        }
+        label {
+            color: #57483d;
+            font-weight: bold;
+        }
+        input {
+            padding: 0.3vw 1vw;
+            font-size: 1.2vw;
+            font-weight: bold;
+            background-color: #ffcb8f;
+            border:2px solid #f05a28;
+            color: #57483d;
+        }
+        button {
+            background-color: #ffcb8f;
+            border:2px solid #f05a28;
+            color: #57483d;
+            font-weight: bold;
+            padding: 0.3vw;
+            font-size: 1vw;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ffe600;
+        }
+        table {
+            border-collapse: collapse;
+            margin-top: 1vw;
+        }
+        td {
+            border: 1px solid #f05a28;
+            text-align: center;
+            line-height: 3vw;
+            width: 3vw;
+            height: 3vw;
+            background-color: #ffcb8f;
+            color: #ffcb8f;
+        }
+        td.opened {
+            background: #fff;
+            color: #f05a28;
+        }
+        td.flag {
+            background: red;
+            color: #000;
+        }
+        td.question {
+            background: orange;
+        }
+        #result{
+            margin-top: 1vw;
+            font-weight: bold;
+            color: #57483d;
+        }
+        @media (max-width:680px) {
+            input {
+                display: block;
+            }
+            button {
+                margin-top: 1vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="hor">가로</label>
+        <input id="hor" type="number" placeholder="가로" value="10">
+        <label for="ver">세로</label>
+        <input id="ver" type="number" placeholder="세로" value="10">
+        <label for="mine">지뢰</label>
+        <input id="mine" type="number" placeholder="지뢰" value="20">
+        <button id="exec">실행</button>
+    </div>
+    <table id="table">
+        <tbody></tbody>
+    </table>
+    <div id="result">
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
