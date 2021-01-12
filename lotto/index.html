@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #227dbd;
+        }
+        h1 {
+            position: absolute;
+            top: 30%;
+            font-size: 5vh;
+            color: #fff;
+        }
+        span {
+            font-size:3vh;
+            font-weight: bold;
+            padding: 1vw 0;
+            display: none;
+        }
+        #start {
+            padding: 1vw 2vw;
+            border: none;
+            font-size: 3vh;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #0b2e59;
+            color: #fff;
+            border-radius: 10px;
+            border:5px solid #0b2e59;
+            transition: all 0.3s ease;
+        }
+        #start:hover {
+            border:5px solid #0b2e59;
+            background-color:transparent;
+            color: #0b2e59;
+        }
+        #result div, .bonus div {
+            display: inline-block;
+            width: 5vh;
+            height: 5vh;
+            line-height: 5vh;
+            border-radius: 50%;
+            text-align: center;
+            font-size:2.5vh;
+            margin: 0 0.3vw;
+            font-weight: bold;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>로또 추첨기</h1>
+    <button id="start">시작하기</button>
+    <span>당첨 숫자</span>
+    <div id="result"></div>
+    <span>보너스</span>
+    <div class="bonus"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
