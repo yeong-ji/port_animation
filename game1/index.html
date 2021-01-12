@@ -17,25 +17,30 @@
             flex-direction: column;
             background-color: #f9f4ec;
         }
+        .input-wrap {
+            margin: 0 auto;
+            text-align: center;
+        }
         label {
             color: #57483d;
             font-weight: bold;
         }
         input {
-            padding: 0.3vw 1vw;
-            font-size: 1.2vw;
+            padding: 0.5vh 1vh;
+            font-size: 1.5vh;
             font-weight: bold;
             background-color: #ffcb8f;
             border:2px solid #f05a28;
             color: #57483d;
+            width: 10%;
         }
         button {
             background-color: #ffcb8f;
             border:2px solid #f05a28;
             color: #57483d;
             font-weight: bold;
-            padding: 0.3vw;
-            font-size: 1vw;
+            padding: 0.5vh;
+            font-size: 1.3vh;
             cursor: pointer;
         }
         button:hover {
@@ -43,14 +48,14 @@
         }
         table {
             border-collapse: collapse;
-            margin-top: 1vw;
+            margin-top: 1vh;
         }
         td {
             border: 1px solid #f05a28;
             text-align: center;
-            line-height: 3vw;
-            width: 3vw;
-            height: 3vw;
+            line-height: 5vh;
+            width: 5vh;
+            height: 5vh;
             background-color: #ffcb8f;
             color: #ffcb8f;
         }
@@ -69,20 +74,23 @@
             font-weight: bold;
             color: #57483d;
             position: absolute;
-            bottom: 10%;
+            bottom: 15%;
         }
         @media (max-width:680px) {
-            input {
+            /* input, label {
                 display: block;
             }
             button {
-                margin-top: 1vw;
+                margin-top: 1vh;
             }
+            #result {
+                bottom: 10%;
+            } */
         }
     </style>
 </head>
 <body>
-    <div>
+    <div class="input-wrap">
         <label for="hor">가로</label>
         <input id="hor" type="number" placeholder="가로" value="10">
         <label for="ver">세로</label>
