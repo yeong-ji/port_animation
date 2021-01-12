@@ -66,6 +66,7 @@ body {
     transform: translateZ(10vw); 
     -webkit-transform: translateZ(10vw); 
     background-color: #23B5AF;
+    opacity: .5;
 }
 .three {
     transform: rotateY(90deg) translateZ(10vw);
