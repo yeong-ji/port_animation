@@ -25,6 +25,7 @@ body {
     width: 20vw;
     height: 20vw;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     animation : spin 5s infinite linear;
 }
 .cube>div {
@@ -34,30 +35,42 @@ body {
 }
 .one {
     transform: rotateX(90deg) translateZ(10vw); 
+    -webkit-transform: rotateX(90deg) translateZ(10vw); 
     background-color: #E3493B;
 }
 .two {
     transform: translateZ(10vw); 
+    -webkit-transform: translateZ(10vw); 
     background-color: #23B5AF;
 }
 .three {
     transform: rotateY(90deg) translateZ(10vw);
+    -webkit-transform: rotateY(90deg) translateZ(10vw);
     background-color: #E8487F;
 }
 .four {
     transform: rotateY(180deg) translateZ(10vw);
+    -webkit-transform: rotateY(180deg) translateZ(10vw);
     background-color: #28B78D;
 }
 .five {
     transform: rotateY(-90deg) translateZ(10vw);
+    -webkit-transform: rotateY(-90deg) translateZ(10vw);
     background-color: #FF5B00;
 }
 .six {
     transform: rotateX(-90deg) translateZ(10vw);
+    -webkit-transform: rotateX(-90deg) translateZ(10vw);
     background-color: #FEEB51;
 }
 
 @keyframes spin {
-    0%{transform: rotate(0deg);}
-    100%{transform: rotateX(360deg) rotateY(-360deg);}
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100%{
+        transform: rotateX(360deg) rotateY(-360deg);
+        -webkit-transform: rotateX(360deg) rotateY(-360deg);
+    }
 }
