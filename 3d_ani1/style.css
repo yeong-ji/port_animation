@@ -29,6 +29,29 @@ body {
     animation : spin 5s infinite linear;
     -webkit-animation : spin 5s infinite linear;
 }
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+        /* -webkit-transform: rotate(0deg); */
+    }
+    to{
+        transform: rotateX(360deg) rotateY(-360deg);
+        /* -webkit-transform: rotateX(360deg) rotateY(-360deg); */
+    }
+}
+
+@-webkit-keyframes spin {
+    from{
+        /* transform: rotate(0deg); */
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        /* transform: rotateX(360deg) rotateY(-360deg); */
+        -webkit-transform: rotateX(360deg) rotateY(-360deg);
+    }
+}
+
 .cube>div {
     position: absolute;
     width: 20vw;
@@ -65,24 +88,3 @@ body {
     background-color: #FEEB51;
 }
 
-@keyframes spin {
-    0%{
-        transform: rotate(0deg);
-        /* -webkit-transform: rotate(0deg); */
-    }
-    100%{
-        transform: rotateX(360deg) rotateY(-360deg);
-        /* -webkit-transform: rotateX(360deg) rotateY(-360deg); */
-    }
-}
-
-@-webkit-keyframes spin {
-    0%{
-        /* transform: rotate(0deg); */
-        -webkit-transform: rotate(0deg);
-    }
-    100%{
-        /* transform: rotateX(360deg) rotateY(-360deg); */
-        -webkit-transform: rotateX(360deg) rotateY(-360deg);
-    }
-}
