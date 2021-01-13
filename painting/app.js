@@ -7,7 +7,7 @@ const mode = document.getElementById("jsMode");
 const saveBtn = document.getElementById("jsSave");
 
 const INITIAL_COLOR = "#2c2c2c";
-const CANVAS_SIZE = 500;
+const CANVAS_SIZE = 250;
 
 //캔버스 실제 픽셀사이즈 지정
 canvas.width = CANVAS_SIZE;
