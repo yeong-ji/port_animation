@@ -18,8 +18,8 @@
             background-color: #f9f4ec;
         }
         .input-wrap {
-            margin: 0 auto;
             text-align: center;
+            margin: 0 auto 5vh;
         }
         label {
             color: #57483d;
@@ -29,17 +29,20 @@
             padding: 0.5vh 1vh;
             font-size: 1.5vh;
             font-weight: bold;
-            background-color: #ffcb8f;
+            border-radius: 5px;
+            background-color: transparent;
             border:2px solid #f05a28;
             color: #57483d;
             width: 10%;
         }
         button {
-            background-color: #ffcb8f;
-            border:2px solid #f05a28;
-            color: #57483d;
+            color: #fff;
             font-weight: bold;
-            padding: 0.5vh;
+            border: none;
+            background-color: #f05a28;
+            transition: background-color .3s ease;
+            border-radius: 5px;
+            padding: 0.7vh 1vw;
             font-size: 1.3vh;
             cursor: pointer;
         }
@@ -52,7 +55,7 @@
             -ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
         }
         td {
-            border: 1px solid #f05a28;
+            /* border: 1px solid #f05a28; */
             text-align: center;
             line-height: 5vh;
             width: 5vh;
@@ -60,13 +63,16 @@
             background-color: #ffcb8f;
             color: #ffcb8f;
             cursor: pointer;
+            box-shadow: inset 5px 5px 2px rgb(252 223 190), inset 0 0 2px 5px #f6c082;
         }
         td.opened {
             background: #fff;
-            color: #f05a28;
+            /* color: #f05a28; */
+            box-shadow: inset 5px 5px 3px rgb(238, 238, 238), inset 0 0 3px 5px rgb(212, 212, 212);
         }
         td.flag {
             background: red;
+            box-shadow: inset 5px 5px 3px #ffd3d3, inset 0 0 3px 5px rgb(212, 16, 16);
             color: #000;
         }
         td.question {
