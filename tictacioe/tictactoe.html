@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>틱택토</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #fff2f2;
+        }
+        table{
+            border-collapse: collapse;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+         td {
+            border:0.5vw solid #fff2f2; 
+            background-color: #db48d4;
+            width: 7vw; 
+            height: 7vw; 
+            text-align: center; 
+            font-weight:bold; 
+            font-size: 3vw;
+            color: #fff;
+        }
+        tr:nth-child(1) td:nth-child(2), tr:nth-child(2) td:nth-child(1), tr:nth-child(2) td:nth-child(3), tr:nth-child(3) td:nth-child(2) {
+            background-color:#912b8e;
+        }
+    </style>
+</head>
+<body>
+    <script src="tictactoe.js"></script>
+</body>
+</html>
