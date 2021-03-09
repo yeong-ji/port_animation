@@ -1,0 +1,55 @@
+
+{
+    "status": "ok",
+    "status_message": "Query was successful",
+    "data": {
+      "count": 1,
+      "number": 1,
+      "scripts": [
+        {
+          "id": 1,
+          "sub_title": "01",
+          "title": "모멘텀 클론코딩",
+          "year": "2021",
+          "frame": "https://yeong-ji.github.io/port_animation/Vanilla_Javascript1/",
+          "text1": "배경화면 무작위로 생성하기",
+          "text2": "나의 이름 저장하기",
+          "text3": "해야할일 목록작성하기",
+          "link": "https://github.com/yeong-ji/port_animation/tree/main/Vanilla_Javascript1"
+        },
+        {
+          "id": 2,
+          "sub_title": "02",
+          "title": "로또 추첨기",
+          "year": "2021",
+          "frame": "https://yeong-ji.github.io/port_animation/lotto/",
+          "text1": "Math.random( )으로 ",
+          "text2": "45개의 랜덤값을 배열에 담고",
+          "text3": "앞에 있는 0 ~ 5 까지의 숫자를 뽑기",
+          "link": "https://github.com/yeong-ji/port_animation/tree/main/lotto"
+        },
+        {
+          "id": 3,
+          "sub_title": "03",
+          "title": "틱택토",
+          "year": "2021",
+          "frame": "https://yeong-ji.github.io/port_animation/tictacioe/",
+          "text1": "사용자가 먼저 칸을 클릭하고",
+          "text2": "컴퓨터로 턴을 넘겨 칸을 선택",
+          "text3": "게임 결과가 나오고 자동 초기화",
+          "link": "https://github.com/yeong-ji/port_animation/tree/main/tictacioe"
+        },
+        {
+            "id": 4,
+            "sub_title": "04",
+            "title": "그림판 만들기",
+            "year": "2021",
+            "frame": "https://yeong-ji.github.io/port_animation/painting/",
+            "text1": "canvas, input 타입range를 사용",
+            "text2": "mousemove이벤트 사용하기",
+            "text3": "png로 저장하기",
+            "link": "https://github.com/yeong-ji/port_animation/tree/main/painting"
+          }
+      ]
+    }
+  }

@@ -1,0 +1,51 @@
+
+{
+    "status": "ok",
+    "status_message": "Query was successful",
+    "data": {
+      "count": 1,
+      "number": 1,
+      "anis": [
+        {
+          "id": 1,
+          "sub_title": "01",
+          "title": "유령 애니메이션",
+          "frame": "https://yeong-ji.github.io/port_animation/css_ani1/",
+          "text1": "Pure CSS로 작업",
+          "text2": "filter blur로 글로우",
+          "text3": "효과를 주었습니다.",
+          "link": "https://github.com/yeong-ji/port_animation/tree/main/css_ani1"
+        },
+        {
+          "id": 2,
+          "sub_title": "02",
+          "title": "텍스트 애니메이션",
+          "frame": "https://yeong-ji.github.io/port_animation/text_ani1/",
+          "text1": "텍스트에 Pure CSS",
+          "text2": "사용하여 작업하였으며,",
+          "text3": "애니메이션은 keyframes을 사용",
+          "link": "https://github.com/yeong-ji/port_animation/tree/main/text_ani1"
+        },
+        {
+          "id": 3,
+          "sub_title": "03",
+          "title": "스케일러블 벡터 그래픽",
+          "frame": "https://yeong-ji.github.io/port_animation/svg_ani1/",
+          "text1": "figma로 간단한 벡터이미지",
+          "text2": "그려서 svg로 내보내기",
+          "text3": "css로 애니메이션 효과를 주었습니다.",
+          "link": "https://github.com/yeong-ji/port_animation/tree/main/svg_ani1"
+        },
+        {
+            "id": 4,
+            "sub_title": "04",
+            "title": "큐브 애니메이션",
+            "frame": "https://yeong-ji.github.io/port_animation/3d_ani1/",
+            "text1": "preserve-3d 속성 사용하기",
+            "text2": "translateZ로 입체감 만들기",
+            "text3": "애니메이션으로 rotation 적용",
+            "link": "https://github.com/yeong-ji/port_animation/tree/main/3d_ani1"
+          }
+      ]
+    }
+  }
